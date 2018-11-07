@@ -65,13 +65,13 @@ $jobs = mysqli_query($conn, $job);
                         <div class="modal-header" style=" background-color: rgba(112, 202, 28, 0.5);">
                             <h4>Job Title: <span style="color:#889c80;"><?= $row['title'] ?></span></h4>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body" style='padding: 0px 80px 0px 0px;'>
                             <p class="text-dark" style="color: rgba(50, 51, 48, 0.7);">
                                 <?= $row['description'] ?>
                             </p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"style='margin: 80px 65px;'>Close</button>
                         </div>
                     </div>
                 </div>
