@@ -1,0 +1,9 @@
+.form-panel, .alert{
+  margin-top: 40px;
+}
+.required{
+  color: red;
+}
+.alert:first-child{
+  display:none;
+}

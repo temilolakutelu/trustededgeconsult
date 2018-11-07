@@ -1,0 +1,10 @@
+.alert:first-child { 
+   display:none;
+}
+
+.list-panel, .alert{
+  margin-top: 40px;
+}
+.list-button{
+  margin: 8px !important;
+}

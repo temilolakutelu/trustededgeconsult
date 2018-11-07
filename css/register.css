@@ -1,0 +1,144 @@
+
+
+div[class*='col-'] {
+    padding: 0 20px;
+}
+
+.wrap {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+
+a:focus,
+a:hover,
+a:active {
+    outline: 0;
+    text-decoration: none;
+}
+.course_outline{
+    max-width: 750px;
+}
+.panel {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    background: none;
+    box-shadow: none;
+}
+
+.panel:last-child {
+    border-bottom: none;
+}
+
+.panel-group > .panel:first-child .panel-heading {
+    border-radius: 4px 4px 0 0;
+}
+
+.panel-group .panel {
+    border-radius: 0;
+}
+
+.panel-group .panel + .panel {
+    margin-top: 0;
+}
+
+.panel-heading {
+    background-color: #80c224;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    padding: 0;
+}
+
+.panel-title a {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    border-bottom: 1px solid #eee;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.panel-title i {
+    float: right;
+    font-size: 28px;
+}
+
+.panel-body {
+    background: #fff;
+    color: rgba(58, 90, 14, 0.6);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.panel:last-child .panel-body {
+    border-radius: 0 0 4px 4px;
+}
+
+.panel:last-child .panel-heading {
+    border-radius: 0 0 4px 4px;
+    transition: border-radius 0.3s linear 0.2s;
+}
+
+.panel:last-child .panel-heading.active {
+    border-radius: 0;
+    transition: border-radius linear 0s;
+}
+.feedback-form{
+    position: absolute;
+    left: 60px;
+    margin-top: 24%;
+    width: 35rem;
+    border-radius: 20px;
+}
+#feedback{
+    background: rgba(250, 255, 243, 0.4);
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    width: 33rem;
+    border-radius: 20px;
+    box-shadow: 2px 4px 4px 4px rgb(234, 239, 230);
+}
+#feedback label{
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: grey;
+}
+#feedback input, #feedback textarea{
+  width: 100%;
+  box-sizing: border-box;
+}
+#feedback input[type=text], #feedback input[type=email], #feedback textarea{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: grey;
+    /* border-color: #8fec4d; */
+    box-shadow: 1px 2px 2px 2px rgba(117, 179, 57, 0.6);
+}
+#feedback textarea{
+    height: 200px;
+}
+#feedback input[type=submit]{
+    background: rgb(130, 202, 54);
+    border-radius: 30px;
+    width: 100px;
+    border: 0;
+    /* margin-top: 10px; */
+    margin: 20px 30%;
+    padding: 10px;
+}
+#feedback input[type=submit]:hover,
+#feedback input[type=submit]:focus{
+    background: rgb(186, 187, 186);
+}
+.g-recaptcha {
+    margin-top: 10px;
+    transform:scale(0.77);
+    transform-origin:0 0;
+}

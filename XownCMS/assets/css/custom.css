@@ -1,0 +1,10 @@
+#topnav{
+    border-top: 2px solid #26C6DA !important;
+}
+footer{
+    background-color: #26C6DA !important;
+    padding: 10px !important;
+}
+footer h6, #back-to-top{
+    color: #fff !important;
+}

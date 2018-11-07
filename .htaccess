@@ -1,0 +1,31 @@
+RewriteEngine On
+# Disable Directory Listings in this Directory and Subdirectories
+# This will hide the files from the public unless they know direct URLs
+Options -Indexes
+
+# remove trailing slash
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{THE_REQUEST} \s(.+?)/+[?\s]
+RewriteRule ^(.+?)/$ /$1 [R=301,L]
+
+## hide .php extension
+#RewriteCond %{REQUEST_FILENAME}.php -f
+#RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+# Rewrite for gallery.php
+#RewriteRule ^custom$ gallery.php [NC,L]
+
+# NC makes the rule non case sensitive
+# L makes this the last rule that this specific condition will match
+# $ in the regular expression makes the matching stop so that "customblah" will not work
+
+# Rewrite for innerPages.php?pageID=xxxxx
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ innerpages.php?pageID=$1 
+RewriteRule ^([a-zA-Z0-9_-]+)/$ innerpages.php?pageID=$1
+
+
