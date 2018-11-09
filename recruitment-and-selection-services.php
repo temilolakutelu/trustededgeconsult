@@ -138,7 +138,7 @@ if (isset($_POST['submit'])) {
                 </div>
             </div>
             <div class="col-md-6">
-                <h3 style="color: rgb(148, 212, 43);">Training</h3>
+                <h3 style="color: rgb(148, 212, 43);">Recruitment And Selection Services</h3>
                 <p>Our recruitment and selection services provide timely, effective and high quality services to assist
                     our clients to recruit the right staff to meet current needs and future challenges.</p>
                 <p style="color: rgb(148, 212, 43);">Recruitment Options</p>

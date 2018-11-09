@@ -40,10 +40,9 @@ if ($this->session->userdata('error') <> '') {
               <th>Company Name</th>
 								<th>Job Title</th>
 								<th>Description</th>
-								<th>Date</th>
+								<th>Closing Date</th>
 								<th>Application URL</th>
 								<th>Company Website</th>
-                <th>Logo</th>
 								<th>Action</th>
 							</tr>
 						</thead>
@@ -59,7 +58,6 @@ if ($this->session->userdata('error') <> '') {
                 <td><?= $row->url; ?></td>
                 <td><?= $row->website; ?></td>
 						
-								<td class="center"><img src="<?= base_url(); ?>img/post/<?= $row->logo; ?>" style="width:100px; height:50px"></td>
 								<td class="center" style="width:15%">
 									<a class="btn btn-sm btn-info" href="<?= site_url('post_job/update/' . $row->post_id); ?>">
 										<i class="halflings-icon white edit"></i> Edit  

@@ -75,7 +75,7 @@ if (validation_errors() != false) {
                 <input type="text" class="form-control" name="tagline" id="tagline" value="<?= set_value('tagline'); ?>" />
             </div>
             <div class="form-group col-md-10">
-                <label for="video">Video Link <span class="required">*(Youtube link e.g. https://www.youtube.com/embed/dZKXteMyXQ0?rel=0&autoplay=1)</span></label>
+                <label for="video">Video Link <span>(Youtube link e.g. https://www.youtube.com/embed/dZKXteMyXQ0?rel=0&autoplay=1)</span></label>
                 <input type="text" class="form-control" name="video" placeholder="Web reference" value="<?php echo set_value('video'); ?>"/>
             </div>
             <div class="form-group col-sm-5">
@@ -86,16 +86,7 @@ if (validation_errors() != false) {
                 <label for="date">Closing Date<span class="required"> *</span></label>
                 <input type="date" class="form-control" name="date" id="date" value="<?= set_value('date'); ?>" />
             </div>
-            <div class="form-group col-md-10">
-                <label for="logo" class="control-label">Company logo <span class="required">*(Width:1090px by 750px)</span></label>
-                <div class="fileinput fileinput-new" style="width: 100%;" data-provides="fileinput">
-                    <div class="fileinput-preview thumbnail mb20" data-trigger="fileinput" style="width: 100%; height: 150px;"></div>
-                    <div>
-                        <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
-                        <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" id="logo" name="logo" required></span>
-                    </div>
-                </div>
-            </div>
+            
             
             <div class="form-group col-md-10">
                 <label for="health_history">Job Description<span class="required">*</span></label>

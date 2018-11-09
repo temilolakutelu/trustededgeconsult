@@ -49,37 +49,7 @@ class Post_job extends MY_Controller
         if ($this->form_validation->run() == false) {
             $this->create();
         } else {
-            $ext = substr(strrchr($_FILES['image']['name'], '.'), 1);
-            $new_logo = date('Ymd') . time() . "." . $ext;
-            $config['file_name'] = $new_name;
-            $config['upload_path'] = '../img/post/';
-            $config['allowed_types'] = 'gif|jpg|png';
-            $config['max_size'] = 1200;
-            $config['max_width'] = 2200;
-            $config['max_height'] = 1280;
 
-            $this->load->library('upload', $config);
-            $this->upload->initialize($config);
-
-            if (!$this->upload->do_upload('logo')) {
-                $this->session->set_flashdata('error', $this->upload->display_errors());
-                $this->create();
-            } else {
-
-                $config['image_library'] = 'gd2';
-                $config['source_image'] = '../img/post/' . $new_logo;
-                $config['create_thumb'] = false;
-                $config['maintain_ratio'] = false;
-                $config['quality'] = "50%";
-                $config['width'] = 200;
-                $config['height'] = 120;
-                $config['new_image'] = '../img/post/' . $new_logo;
-
-                $this->load->library('image_lib', $config);
-
-                $this->image_lib->resize();
-                $data = array('upload_data' => $this->upload->data());
-            }
             $data = array(
                 'email' => $this->input->post('email', true),
                 'title' => $this->input->post('title', true),
@@ -90,7 +60,6 @@ class Post_job extends MY_Controller
                 'tagline' => $this->input->post('tagline', true),
                 'twitter_name' => $this->input->post('twitter_name', true),
                 'video' => $this->input->post('video', true),
-                'logo' => $new_logo,
                 'date' => $this->input->post('date', true)
 
             );
@@ -121,7 +90,6 @@ class Post_job extends MY_Controller
                 'tagline' => set_value('tagline', $row->tagline),
                 'twitter_name' => set_value('twitter_name', $row->twitter_name),
                 'video' => set_value('video', $row->video),
-                'logo' => set_value('logo', $row->logo),
                 'post_id' => $row->post_id,
                 'date' => set_value('date', $row->date),
             );
@@ -145,7 +113,6 @@ class Post_job extends MY_Controller
             'tagline' => $this->input->post('tagline', true),
             'twitter_name' => $this->input->post('twitter_name', true),
             'video' => $this->input->post('video', true),
-            'logo' => $new_logo,
             'date' => $this->input->post('date', true)
         );
         $this->Post_model->update($this->input->post('id', true), $data);

@@ -4,6 +4,37 @@
 include 'XownCMS/conn.php';
 $job = "SELECT * FROM tb_post_job";
 $jobs = mysqli_query($conn, $job);
+
+
+
+if (isset($_POST['submit'])) {
+
+    $location = 'uploads/';
+
+    $fileName = $_FILES['file']['name'];
+    $tmpName = $_FILES['file']['tmp_name'];
+    $fileType = $_FILES['file']['type'];
+
+    if ($fileType == "application/pdf") {
+        if (move_uploaded_file($tmpName, $location . $fileName)) {
+            $filesql = "INSERT INTO tb_cv(fullname,email,qualification,field,grade,url,type)VALUES('" . $_POST["fname"] . "','" . $_POST["email"] . "','" . $_POST["qual"] . "','" . $_POST["field"] . "','" . $_POST["grade"] . "','$fileName','$fileType')";
+
+            if (mysqli_query($conn, $filesql)) {
+                $success = 'cv uploaded successfully';
+            }
+            $conn->close();
+            
+            // $conn->multi_query($filesql);
+        } else {
+
+            echo "<p>Upload Failed.</p>";
+        }
+
+
+    } else {
+        $exmsg = 'cv must be uploaded in PDF format';
+    }
+}
 ?>
 
 <?php include_once('header.php'); ?>
@@ -23,6 +54,8 @@ $jobs = mysqli_query($conn, $job);
         <div class="abnner_link_inner">
             <a class="active" href="../">Home</a>
             <a href="featured-jobs">Latest Jobs</a>
+             <!-- CV Submission toggle -->
+             <button id="Mybtn" class="btn">Submit your CV</button>
         </div>
     </div>
 </div>
@@ -31,6 +64,81 @@ $jobs = mysqli_query($conn, $job);
 <br>
 
 <section id="search" class="container">
+<div>
+                       
+                        <?php
+                        if (isset($success)) {
+                            echo "<div style='color: grey;'>" . $success . "</div>";
+                        }
+                        ?>
+                        <!-- Cv submission form -->
+                        <form id="myform" method="post" action="" enctype="multipart/form-data">
+                            <i class="fa fa-times" id='form-close' style='float: right;margin: 15px;color: #848181;'></i>
+
+                            <div class="row">
+
+                                <div class="col-4">
+                                    <label class="control-label" for="fname">Full Name</label>
+                                    <input type="text" class="form-control" name='fname' required>
+                                </div>
+                                <div class="col-4">
+                                    <label class="control-label" for="email">Email</label>
+                                    <input type="text" class="form-control" name='email' required>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="qualifications">Qualification</label>
+                                    <select id="qualifications" class="form-control" name='qual' required>
+                                        <option selected>Choose...</option>
+                                        <option>Degree</option>
+                                        <option>Masters'</option>
+                                        <option>PostGraduate</option>
+                                        <option>HND</option>
+                                        <option>OND</option>
+
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <label for="fiels">Field Of Study</label>
+                                    <input type="text" class="form-control" name='field' placeholder="Field Of Study"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="grade">Grade</label>
+                                    <select id="grade" class="form-control" name='grade' placeholder='Grade' required>
+                                        <option selected>Choose...</option>
+                                        <option>First Class/Distinction</option>
+                                        <option>Second Class Upper/Upper Credit</option>
+                                        <option>Second Class Lower/Lower credit</option>
+                                        <option>Third Class</option>
+                                        <option>Pass</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="input-group mb-3 col">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroupFileAddon01">CV Upload( *pdf
+                                            *msword)</span>
+                                    </div>
+                                    <div class="custom-file">
+                                        <input name="file" type="file">
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" name="submit" class="btn-success" value="submit" style='float: right; margin-bottom: 10px;margin-right: 20%;'>
+
+                        </form>
+                    </div>
+
+
+
     <div id='jobs' class='row'>
         <div class="panel-group wrap" id="bs-collapse">
 
@@ -71,7 +179,8 @@ $jobs = mysqli_query($conn, $job);
                             </p>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal"style='margin: 80px 65px;'>Close</button>
+                        <a href="recruitment-and-selection-services.php"><button type="button" class="btn btn-default"style='position: absolute;top: 170;right: 120;'>Apply</button></a>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"style='position: absolute;top: 170;right: 50;'>Close</button>
                         </div>
                     </div>
                 </div>
@@ -88,3 +197,4 @@ $jobs = mysqli_query($conn, $job);
 
 <?php include_once('footer.php'); ?>
 
+<script src="js/cv.js"></script>
