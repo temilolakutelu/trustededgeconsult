@@ -18,7 +18,8 @@
         <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/minimal/blue.css" rel="stylesheet">
         <link type="text/css" href="<?php echo base_url(); ?>assets/css/custom.css" rel="stylesheet">
          <link type="text/css" href="<?php echo base_url(); ?>assets/datatables/dataTables.bootstrap.css" rel="stylesheet">
-            
+         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+         
         <script src="https://code.jquery.com/jquery-1.10.2.min.js" integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous"></script>
         
         <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js" integrity="sha256-lnH4vnCtlKU2LmD0ZW1dU7ohTTKrcKP50WA9fa350cE=" crossorigin="anonymous"></script>
@@ -110,6 +111,7 @@
                                         <li><a href="<?= site_url('subscription'); ?>"><i class="fa fa-user"></i> <span> Newsletter Subscription</span></a></li>
                                         <li><a href="<?= site_url('feedback'); ?>"><i class="fa fa-user"></i> <span> Customer/Trainees' Feedback</span></a></li>
                                         <li><a href="<?= site_url('upload'); ?>"><i class="fa fa-briefcase"></i> <span> Upload Document</span></a></li>
+                                        <li><a href="<?= site_url('blog'); ?>"><i class="fab fa-blogger"></i> <span> Blog </span></a></li>
                                        <li><a href="<?= site_url('user_management/update_password'); ?>"><i class="fa fa-eye"></i> <span>Change Password</span></a></li>
                                          <?php if ($role_type == 1) { ?>
                                             <li><a href="<?= site_url('user_management'); ?>"><i class="fa fa-user"></i> <span>Users</span></a></li>

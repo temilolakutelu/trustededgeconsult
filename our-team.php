@@ -339,7 +339,7 @@
         <br>
         <br>
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="section_text">
                     <h4>Skills</h4>
                     <br>
@@ -349,7 +349,7 @@
             </div>
             <ul>
                 <div class="col-sm-4">
-                    <p>Corporate Trainees
+                    <p>Corporate Training
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         70%</p>
                     <br>
@@ -368,14 +368,14 @@
                 </div>
                 <ul>
                     <div class="col-sm-4">
-                        <p>Quality Employees
+                        <p>Outsourcing
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90%</p>
                         <br>
                         <div class="progress">
                             <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90"
                                 aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
                         </div>
-                        <p>Educational
+                        <p>International School Placement
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;76%</p>
                         <br>
                         <div class="progress">

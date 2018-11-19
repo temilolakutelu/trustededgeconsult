@@ -441,8 +441,8 @@ include_once('header.php');
 
 
                     </div>
-                    <a data-slide="prev" href="#fade-carousel" class="left carousel-control"><i class="fa fa-arrow-left"></i></a>
-                    <a data-slide="next" href="#fade-carousel" class="right carousel-control"><i class="fa fa-arrow-right"></i></a>
+                    <a data-slide="prev" href="#fade-carousel" class="left carousel-control"><img src="img/icon/left.png" alt=""></a>
+                    <a data-slide="next" href="#fade-carousel" class="right carousel-control"><img src="img/icon/right.png" alt=""></a>
                 </div>
 
             </div>

@@ -17,9 +17,10 @@
                         </div>
                         <br>
                         <ul>
-                            <li><a href="about-trusted">About Trusted Edge</a></li>
+                            <li><a href="about-us">About Trusted Edge</a></li>
                             <li><a href="our-team">Management Team</a></li>
-                            <li><a href="clients">Clients</a></li>
+                            <li><a href="client">Clients</a></li>
+                            <li><a href="blog/blog-index">Our Blog</a></li>
                         </ul>
                     </aside>
                 </div>
@@ -66,7 +67,8 @@
                                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                 </div>
                                 <div class="media-body">
-                                    <a href="#" style="font-size:13px;">trustededge@trustededgeconsult.com </a>
+                                    <a href="#" style="font-size:13px;">trusted@trustedegeconsult.com<br/>
+                                    trusted@trustedege.ng </a>
                                 </div>
                             </div>
                         </div>
@@ -84,7 +86,7 @@
                 </div>
                 <div class="pull-right">
                     <ul class="f_social">
-                        <li><a href=" https://www.facebook.com/trustededgeconsult/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.facebook.com/trustededgeconsult/" target="_blank"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="https://twitter.com/Trustededge" target="_blank"><i class="fa fa-twitter"></i></a></li>
                         <li><a href="https://www.instagram.com/trustededge/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/trusted-edge-5b4b2b105/" target="_blank"><i class="fa fa-linkedin"></i></a></li>

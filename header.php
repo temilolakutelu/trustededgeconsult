@@ -89,7 +89,7 @@
                         </div>
                         <div class="media-body">
                             <h4>Email:</h4>
-                            <h5>trustededge@trustededgeconsult.com</h5>
+                            <h5>trusted@trustedegeconsult.com <br> trusted@trustedege.ng</h5>
                         </div>
                     </div>
                     <div class="media">
@@ -192,9 +192,11 @@
                         <li>
                             <a href="http://www.trustededgeconsult.com/teces/">TECES</a>
                         </li>
-
+                        
                         <li><a href="contact-us">Contact Us</a></li>
-                        <!-- <li><a href="http://trustededgeconsult.com/blogs">Blog</a></li> -->
+                        <li>
+                            <a href="blog/blog-index.php">Blog</a>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="skype:123456789?call"><i class="fa fa-skype"></i> free consult</a></li>

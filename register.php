@@ -3,17 +3,17 @@
 <?php
 include 'XownCMS/conn.php';
 
-
+//get training categories from db
 $catSql = 'SELECT * FROM tb_training_category';
 $category = mysqli_query($conn, $catSql);
 
-
+//inserting feedback form input into db
 if (isset($_POST["name"]) || isset($_POST["email"]) || isset($_POST["message"])) {
 
     $feedbacksql = "INSERT INTO tb_feedback(name,email,message) VALUES ('" . $_POST["name"] . "','" . $_POST["email"] . "','" . $_POST["message"] . "');";
     $conn->multi_query($feedbacksql);
 }
-
+//inserting register form input into db
 if (isset($_POST["rname"]) || isset($_POST["remail"]) || isset($_POST["rtel"])) {
 
     $sql = "INSERT INTO tb_registered(trainee_name,email,mobile,course,category) VALUES ('" . $_POST["rname"] . "','" . $_POST["remail"] . "','" . $_POST["rtel"] . "','" . $_POST["rcourse"] . "','" . $_POST["course-category"] . "');";
@@ -21,15 +21,12 @@ if (isset($_POST["rname"]) || isset($_POST["remail"]) || isset($_POST["rtel"])) 
 }
 
 
-$q = $_POST["q"];
 
-$trainingSql = "SELECT * FROM tb_training WHERE category_id = '" . $q . "'";
+
+$trainingSql = "SELECT * FROM tb_training";
 $training = mysqli_query($conn, $trainingSql);
 
 ?>
-
-
-
 
 <?php include_once('header.php'); ?>
 <br>
@@ -75,7 +72,7 @@ $training = mysqli_query($conn, $trainingSql);
                             <br>
                             <br>
                             <label for="course-category" style='color:black;'>Select Course Category</label>
-                            <select name="course-category" required id='category' onchange="showUser(this.value)" >
+                            <select name="course-category" required id='category'>
                             <?php if (!empty($category) && mysqli_num_rows($category) > 0) {
                                 $x = 1;
                                 while ($row = mysqli_fetch_assoc($category)) { ?>
@@ -354,31 +351,5 @@ $training = mysqli_query($conn, $trainingSql);
 </script>
 
 <script src='js/feedback.js'></script>
-<script>
-function showUser(str)
-{
-if (str=="")
-  {
-  document.getElementById("course").innerHTML="";
-  return;
-  }
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-xmlhttp.onreadystatechange=function()
-  {
-  if (xmlhttp.readyState==4 && xmlhttp.status==200)
-    {
-    document.getElementById("course").innerHTML=xmlhttp.responseText;
-    }
-  }
-xmlhttp.open("POST","register.php="+str,true);
-xmlhttp.send();
-}
-</script>
+
 <?php include_once('footer.php'); ?>
