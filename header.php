@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" style="overflow-x: hidden;">
 
-<!-- Mirrored from demos.pixelatethemes.com/consultplus/theme/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jun 2018 09:13:04 GMT -->
 
 <head>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/6F87518E-CEF1-4748-ABE6-6CDB848DF90D/main.js"
-        charset="UTF-8"></script>
+   
     <link rel="stylesheet" crossorigin="anonymous" href="http://gc.kis.v2.scr.kaspersky-labs.com/BDEF7CFD-3FCC-3147-BFC9-7AD29241E9FA/abn/main.css" />
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+   
 
     <!------ Include the above in your HEAD tag ---------->
 
@@ -24,39 +21,26 @@
     <title>Trusted Edge Consult | TECES</title>
 
     <meta charset="utf-8">
-
-    <script src="https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js"></script>
-
-
-    <!-- Icon css link -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Rev slider css -->
+    <link href="https://fonts.googleapis.com/css?family=Ruda:400,900,700" rel="stylesheet">
+
     <link href="vendors/revolution/css/settings.css" rel="stylesheet">
-    <link href="vendors/revolution/css/layers.css" rel="stylesheet">
+    <!-- <link href="vendors/revolution/css/layers.css" rel="stylesheet"> -->
     <link href="vendors/revolution/css/navigation.css" rel="stylesheet">
     <link href="vendors/animate-css/animate.css" rel="stylesheet">
-    <link href="vendors/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"/>
 
     <!-- Extra plugin css -->
-    <link href="vendors/stroke-icon/style.css" rel="stylesheet">
-    <link href="vendors/magnific-popup/magnific-popup.css" rel="stylesheet">
-    <link href="vendors/bootstrap-selector/css/bootstrap-select.min.css" rel="stylesheet">
-
+    <!-- <link href="vendors/stroke-icon/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.3/css/bootstrap-select.min.css" />
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
-    <link href="css/subscription.css" rel="stylesheet">
-<link href="css/testimonials.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/6F87518E-CEF1-4748-ABE6-6CDB848DF90D/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="http://gc.kis.v2.scr.kaspersky-labs.com/BDEF7CFD-3FCC-3147-BFC9-7AD29241E9FA/abn/main.css"/>
+    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '46883479-abfb-4e07-b8e4-121af55614ae', f: true }); done = true; } }; })();</script>
 </head>
 
 <body>
@@ -189,9 +173,9 @@
                             </ul>
                         </li>
 
-                        <li>
+                        <!-- <li>
                             <a href="http://www.trustededgeconsult.com/teces/">TECES</a>
-                        </li>
+                        </li> -->
                         
                         <li><a href="contact-us">Contact Us</a></li>
                         <li>

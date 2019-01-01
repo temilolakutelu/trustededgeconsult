@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/cv.css">
+
 
 <?php
 include 'XownCMS/conn.php';
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
 
 
 <?php include_once('header.php') ?>
-<section class="banner_area">
+<section class="banner_area banner_area2">
     <div class="container">
         <div class="banner_content">
             <h3>Registration & Selection Services</h3>
@@ -46,7 +46,7 @@ if (isset($_POST['submit'])) {
     <div class="container">
         <div class="abnner_link_inner">
             <a class="active" href="index.php">Home</a>
-            <a href="strategic-outsourcing.php">Registration & Selection Services</a>
+            <a href="recruitment-and-selection-services.php">Registration & Selection Services</a>
         </div>
     </div>
 </div>
@@ -61,9 +61,9 @@ if (isset($_POST['submit'])) {
                 <div class="zoom">
                     <img src="img/services/selection-services.jpg">
 
-                    <div>
+                    <div id="cv">
                         <!-- CV Submission toggle -->
-                        <button id="Mybtn" class="btn">Submit your CV</button>
+                        <button id="Mybtn" class="btn cv-btn">Submit your CV</button>
                         <?php
                         if (isset($success)) {
                             echo "<div style='color: grey;'>" . $success . "</div>";

@@ -1,4 +1,3 @@
-<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '46883479-abfb-4e07-b8e4-121af55614ae', f: true }); done = true; } }; })();</script>
 <!-- Pull banners from the database -->
 
 <?php
@@ -42,8 +41,8 @@ include_once('header.php');
 <section class="main_slider_area">
     <div id="main_slider3" class="rev_slider" data-version="5.3.1.6">
         <ul>
-        <?php if (!empty($banner) && mysqli_num_rows($banner) > 0) { ?>
-              <?php $x = 1;
+            <?php if (!empty($banner) && mysqli_num_rows($banner) > 0) { ?>
+            <?php $x = 1;
                // output data of each row
                 while ($row = mysqli_fetch_assoc($banner)) { ?>
             <li data-index="rs-1587" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
@@ -52,8 +51,8 @@ include_once('header.php');
                 data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
                 data-param8="" data-param9="" data-param10="" data-description="">
                 <!-- MAIN IMAGE -->
-                <img src="img/banner/<?= $row['imageURL']; ?>" alt="" data-bgposition="center center" data-bgfit="cover"
-                    data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+                <img id='banner' src="img/banner/<?= $row['imageURL']; ?>" alt="" data-bgposition="center center"
+                    data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
                 <!-- LAYER NR. 1 -->
                 <div class="slider_text_box">
                     <div class="tp-caption tp-resizeme first_text" id="slide-1585-layer-1" data-x="['left','left','left','15','0']"
@@ -61,14 +60,18 @@ include_once('header.php');
                         data-fontsize="['55','55','55','40','30']" data-lineheight="['59','59','59','50','40']"
                         data-width="['550','550','550','400']" data-height="none" data-whitespace="normal" data-type="text"
                         data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                        data-textAlign="['left','left','left','left']"><?= $row['textLine1']; ?> </div>
+                        data-textAlign="['left','left','left','left']">
+                        <?= $row['textLine1']; ?>
+                    </div>
 
                     <div class="tp-caption tp-resizeme secand_text" id="slide-1586-layer-2" data-x="['left','left','left','15','0']"
                         data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['384','384','384','340','225']"
                         data-fontsize="['18','18','18','18','16']" data-lineheight="['110','110','110','110']"
                         data-width="['550','550','550','550','300']" data-height="none" data-whitespace="normal"
                         data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                        data-textAlign="['left','left','left','left']"><?= $row['textLine2']; ?></div>
+                        data-textAlign="['left','left','left','left']">
+                        <?= $row['textLine2']; ?>
+                    </div>
 
                     <div class="tp-caption tp-resizeme slider_button" id="slide-1587-layer-3" data-x="['left','left','left','15','0']"
                         data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['460','460','460','425','330']"
@@ -83,8 +86,8 @@ include_once('header.php');
             <?php 
         }
     } ?>
-     <?php if (!empty($banner2) && mysqli_num_rows($banner2) > 0) { ?>
-              <?php $x = 1;
+            <?php if (!empty($banner2) && mysqli_num_rows($banner2) > 0) { ?>
+            <?php $x = 1;
                // output data of each row
                 while ($row2 = mysqli_fetch_assoc($banner2)) { ?>
             <li data-index="rs-1588" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
@@ -105,14 +108,18 @@ include_once('header.php');
                         data-fontsize="['55','55','55','40','30']" data-lineheight="['59','59','59','50','40']"
                         data-width="['550','550','550','400']" data-height="none" data-whitespace="normal" data-type="text"
                         data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                        data-textAlign="['left','left','left','left']"><?= $row2['textLine1']; ?></div>
+                        data-textAlign="['left','left','left','left']">
+                        <?= $row2['textLine1']; ?>
+                    </div>
 
                     <div class="tp-caption tp-resizeme secand_text" id="slide-1589-layer-2" data-x="['left','left','left','15','0']"
-                        data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['384','384','384','340','225']"
+                        data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['350','350','350','340','225']"
                         data-fontsize="['18','18','18','18','16']" data-lineheight="['26','26','26','26']" data-width="['550','550','550','550','300']"
                         data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on"
                         data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                        data-textAlign="['left','left','left','left']"><?= $row2['textLine2']; ?></div>
+                        data-textAlign="['left','left','left','left']">
+                        <?= $row2['textLine2']; ?>
+                    </div>
 
                     <div class="tp-caption tp-resizeme slider_button" id="slide-1590-layer-3" data-x="['left','left','left','15','0']"
                         data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['460','460','460','425','330']"
@@ -128,11 +135,11 @@ include_once('header.php');
         }
     } ?>
 
-<?php if (!empty($banner3) && mysqli_num_rows($banner3) > 0) { ?>
-              <?php $x = 1;
+            <?php if (!empty($banner3) && mysqli_num_rows($banner3) > 0) { ?>
+            <?php $x = 1;
                // output data of each row
                 while ($row3 = mysqli_fetch_assoc($banner3)) { ?>
-    <li data-index="rs-1589" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+            <li data-index="rs-1589" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
                 data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="500"
                 data-thumb="img/banner/<?= $row3['imageURL']; ?>" data-rotate="0" data-saveperformance="off" data-title="Creative"
                 data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
@@ -147,20 +154,24 @@ include_once('header.php');
                         data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['240','240','240','220','130']"
                         data-fontsize="['55','55','55','40','30']" data-lineheight="['59','59','59','50','40']"
                         data-width="['550','550','550','400']" data-height="none" data-whitespace="normal" data-type="text"
-                        data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                        data-textAlign="['left','left','left','left']"><?= $row3['textLine1']; ?></div>
+                        style='filter:brightness(100%);' data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
+                        data-textAlign="['left','left','left','left']">
+                        <?= $row3['textLine1']; ?>
+                    </div>
 
                     <div class="tp-caption tp-resizeme secand_text" id="slide-1592-layer-2" data-x="['left','left','left','15','0']"
-                        data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['384','384','384','340','225']"
+                        data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['350','350','350','340','225']"
                         data-fontsize="['18','18','18','18','16']" data-lineheight="['26','26','26','26']" data-width="['550','550','550','550','300']"
-                        data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on"
+                        data-height="none" data-whitespace="normal" data-type="text" data-responsive_offset="on" style='filter:brightness(100%);'
                         data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                        data-textAlign="['left','left','left','left']"><?= $row3['textLine2']; ?></div>
+                        data-textAlign="['left','left','left','left']">
+                        <?= $row3['textLine2']; ?>
+                    </div>
 
                     <div class="tp-caption tp-resizeme slider_button" id="slide-1593-layer-3" data-x="['left','left','left','15','0']"
                         data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['460','460','460','425','330']"
                         data-fontsize="['14','14','14','14']" data-lineheight="['46','46','46','46']" data-width="none"
-                        data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                        data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" style='filter:brightness(100%);'
                         data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
                         data-textAlign="['left','left','left','left']">
 
@@ -185,19 +196,19 @@ include_once('header.php');
         <div class="row service_inner">
 
             <div class="col-md-4 col-sm-6">
-                <div class="service_item">
-                    <div class="media">
-                        <div class="media-title">
-                            <h4>STEP 1</h4><br>
-                            <div class="media-left">
-                                <img src="img/icon/service-icon4.png" alt="">
-                                <img src="img/icon/service-icon4-h.png" alt="">
-                            </div>
-                            <div class="media-body">
-                                <a href="#">
-                                    <h4>DESCRIBE YOUR PROBLEM</h4>
-                                </a>
-                                <p>You describe your problem we analyze the situation</p>
+            <div class="service_item">
+                <div class="media">
+                    <div class="media-title">
+                        <h4>STEP 1</h4><br>
+                        <div class="media-left">
+                            <div class='service-4 service-icon4'></div>
+                            <div class='service-4 service-icon4-h'></div>
+                        </div>
+                        <div class="media-body">
+                            <a href="#">
+                                <h4>DESCRIBE YOUR PROBLEM</h4>
+                            </a>
+                            <p>You describe your problem we analyze the situation</p>
                             </div>
                         </div>
                     </div>
@@ -210,8 +221,8 @@ include_once('header.php');
                         <div class="media-title-">
                             <h4>STEP 2</h4><br>
                             <div class="media-left">
-                                <img src="img/icon/service-icon2.png" alt="">
-                                <img src="img/icon/service-icon2-h.png" alt="">
+                                <div class='service-2 service-icon2'></div>
+                                <div class='service-2 service-icon2-h'></div>
                             </div>
                             <div class="media-body">
                                 <a href="#">
@@ -230,8 +241,8 @@ include_once('header.php');
                         <div class="media-title-">
                             <h4>STEP 3</h4><br>
                             <div class="media-left">
-                                <img src="img/icon/service-icon6.png" alt="">
-                                <img src="img/icon/service-icon6-h.png" alt="">
+                                <div class='service-6 service-icon6'></div>
+                                <div class='service-6 service-icon6-h'></div>
                             </div>
                             <div class="media-body">
                                 <a href="#">
@@ -259,7 +270,7 @@ include_once('header.php');
             <div class="col-md-4 col-sm-6">
                 <div class="latest_n_item">
                     <div class="l_n_image">
-                        <img src="img/events8.jpg" alt="">
+                        <img src="img/training/class.jpg" alt="">
                         <div class="date">
                             <h5>27 <span>June</span></h5>
                         </div>
@@ -267,13 +278,13 @@ include_once('header.php');
                     <a href="#">
                         <h4>FAIRS, EXHIBITIONS & SCHOOL VISITS</h4>
                     </a>
-                    <a class="more_link" href="#">Read more</a>
+                    <a class="more_link" href="galleryCat.php">Read more</a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="latest_n_item">
                     <div class="l_n_image">
-                        <img src="img/events7.jpg" alt="">
+                        <img src="img/training/training.jpg" alt="">
                         <div class="date">
                             <h5>27 <span>June</span></h5>
                         </div>
@@ -281,13 +292,13 @@ include_once('header.php');
                     <a href="#">
                         <h4>CAREER COUNSELLING</h4>
                     </a>
-                    <a class="more_link" href="#">Read more</a>
+                    <a class="more_link" href="galleryCat.php">Read more</a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="latest_n_item">
                     <div class="l_n_image">
-                        <img src="img/events9.jpg" alt="">
+                        <img src="img/training/events9.jpg" alt="">
                         <div class="date">
                             <h5>27 <span>June</span></h5>
                         </div>
@@ -295,7 +306,7 @@ include_once('header.php');
                     <a href="#">
                         <h4>SCHOLARSHIP</h4>
                     </a>
-                    <a class="more_link" href="#">Read more</a>
+                    <a class="more_link" href="galleryCat.php">Read more</a>
                 </div>
             </div>
         </div>
@@ -308,8 +319,6 @@ include_once('header.php');
 <br>
 
 <!-- Here is the section -->
-
-
 <section id="counter" class="counter">
     <div class="main_counter_area">
         <div class="overlay p-y-3">
@@ -318,30 +327,30 @@ include_once('header.php');
                     <div class="main_counter_content text-center white-text wow fadeInUp">
                         <div class="col-md-3">
                             <div class="single_counter p-y-2 m-t-1">
-                                <i class="fa fa-building m-b-1"></i>
-                                <h2 class="statistic-counter">100</h2>
+                                <i class="fa fa-user m-b-1"></i>
+                                <h1 class="counter-count">100</h1>
                                 <p>Clients</p>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="single_counter p-y-2 m-t-1">
                                 <i class="fa fa-plus-square m-b-1"></i>
-                                <h2 class="statistic-counter">400</h2>
-                                <p>Trainer</p>
+                                <h1 class="counter-count">200</h1>
+                                <p>Trainers</p>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="single_counter p-y-2 m-t-1">
                                 <i class="fa fa-group m-b-1"></i>
-                                <h2 class="statistic-counter">312</h2>
-                                <p>Training</p>
+                                <h1 class="counter-count">312</h1>
+                                <p>Trainings</p>
                             </div>
                         </div>
                         <div class="col-md-3">
                             <div class="single_counter p-y-2 m-t-1">
                                 <i class="fa fa-pie-chart m-b-1"></i>
-                                <h2 class="statistic-counter">480</h2>
-                                <p>Consultaion</p>
+                                <h1 class="counter-count">480</h1>
+                                <p>Consultation</p>
                             </div>
                         </div>
                     </div>
@@ -351,17 +360,7 @@ include_once('header.php');
     </div>
 </section><!-- End of counter Section -->
 
-
-<!-- Add this script before </body> -->
-
-
 <br>
-<br>
-<br>
-
-
-
-
 
 <!--================Helpline Area =================-->
 <section class="helpline_area">
@@ -374,23 +373,56 @@ include_once('header.php');
                 <div class="media-body">
                     <h6>Need consultation</h6>
                     <h4>start improving your business today</h4>
-                    <p>Contact our customer support team if you have any further questions. We are heare to help you
+                    <p>Contact our customer support team if you have any further questions. We are here to help you
                         out</p>
                     <div class="contact_d">
-                        <a href="#">+234-705-041-5550</a>
-                        <a href="#">info@trustededgeconsult.com</a>
+                        <a href="tel:+2347050415550">+234-705-041-5550</a>
+                        <a href="mailto:trusted@trustedegeconsult.com">trusted@trustedegeconsult.com</a>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
+
 </section>
 <!--================End Helpline Area =================-->
+<!--================Testimonial Area =================-->
 
+<section id="testimonial_area">
+    <div class="testimonial_box">
+        <h2 class="text-center">Our Customers Are Happy!!!</h2>
+        <div class="partner_slider owl-carousel">
+            <?php if (!empty($testimonial) && mysqli_num_rows($testimonial) > 0) { ?>
+            <?php $x = 1;
+                         // output data of each row
+                          while ($row = mysqli_fetch_assoc($testimonial)) { ?>
+            <div class="item" style="width:250px">
+                <div class="">
+                    <div class="block-text rel zmin">
+                        <p>
+                            <?= $row['content']; ?>
+                        </p>
+                        <ins class="ab zmin sprite sprite-i-triangle block"></ins>
+                    </div>
+                    <div class="person-text rel">
+                        <p>
+                            <?= $row['name']; ?>
+                        </p>
+                        <i>
+                            <?= $row['position']; ?>,
+                            <?= $row['company']; ?></i>
+                    </div>
+                </div>
+            </div>
 
-
-
-
+            <?php 
+        }
+    } ?>
+        </div>
+    </div>
+</section>
+<!--================End Testimonial Area =================-->
 <!--================Get In Consultation Area =================-->
 <section class="get_consult_area">
     <div class="container">
@@ -404,55 +436,6 @@ include_once('header.php');
 </section>
 <!--================End Get In Consultation Area =================-->
 
-<!--================Testimonial Area =================-->
-<section class="testimonial text-center" style=" background:url(img/testimonials-bg.jpg) center; background-size:cover;">
-    <div class="container">
-        <h2>Our Clients Are Happy!!!</h2>
-        <div id="carousel">
-            <div class="container">
-                <div class="carousel slide" id="fade-carousel" data-ride="carousel" data-interval="3000">
-                    <!-- Carousel indicators -->
-
-                    <!-- Carousel items -->
-                    <div class="carousel-inner">
-                        <?php if (!empty($testimonials) && mysqli_num_rows($testimonials) > 0) {
-                            $x = 1;
-                // output data of each row
-                            while ($row = mysqli_fetch_array($testimonials)) { ?>
-                        <div class="item <?php echo $row['item']; ?>">
-
-                            <div>
-                                <p >
-                                    <?= $row['content'] ?>
-                                </p>
-                                <span>
-                                    <?= $row['name'] ?> </span><br>
-                                <i>
-                                    <?= $row['position'] ?> ,
-                                    <?= $row['company'] ?></i>
-
-                            </div>
-
-                        </div>
-
-                        <?php 
-                    }
-                } ?>
-
-
-                    </div>
-                    <a data-slide="prev" href="#fade-carousel" class="left carousel-control"><img src="img/icon/left.png" alt=""></a>
-                    <a data-slide="next" href="#fade-carousel" class="right carousel-control"><img src="img/icon/right.png" alt=""></a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<!--================End Testimonial Area =================-->
 <!--================Partner Area =================-->
 <section class="partner_area">
     <div class="container">
@@ -503,10 +486,26 @@ include_once('header.php');
         </form>
     </div>
 </div>
+
 <script>
+    $('.counter-count').each(function () {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+                duration: 5000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+    });
+</script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        margin: 10,
+        loop: true,
+        autoWidth: true,
+        items: 4
 
 </script>
-<script src='js/subscription.js'></script>
-
-
 <?php include_once('footer.php'); ?>

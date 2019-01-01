@@ -1,5 +1,5 @@
 <?php include_once('header.php') ?>
-<section class="banner_area">
+<section class="banner_area banner_area3">
             <div class="container">
                 <div class="banner_content">
                     <h3>Business Process</h3>

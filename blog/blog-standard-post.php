@@ -232,8 +232,8 @@ $res = mysqli_query($conn, $sql);
                     <div class="col-md-6 col-sm-12 col-xs-12 text-right sm-text-center">
                         <div class="social-icon-style-6">
                             <ul class="extra-small-icon">
-                                <li><a class="likes-count" href="#" target="_blank"><i class="fas fa-heart text-deep-pink"></i><span
-                                            class="text-small">300</span></a></li>
+                                <!-- <li><a class="likes-count" href="#" target="_blank"><i class="fas fa-heart text-deep-pink"></i><span
+                                            class="text-small">300</span></a></li> -->
                                 <li><a class="facebook" href="javascript:void(0)" onclick="javascript:genericSocialShare('http://www.facebook.com/sharer.php?u=http://www.trustededgeconsult.com/blog/blog-standard-post.php')" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                                 <li><a class="twitter" href="javascript:void(0)" onclick="javascript:genericSocialShare('http://twitter.com/share?text=Trustededge%20Blog&url=http://www.trustededgeconsult.com/blog/blog-standard-post.php')" target="_blank"><i class="fab fa-twitter"></i></a></li>
                                 <li><a class="google" href="javascript:void(0)" onclick="javascript:genericSocialShare('https://plus.google.com/share?url=http://www.trustededgeconsult.com/blog/blog-standard-post.php')" target="_blank"><i class="fab fa-google-plus-g"></i></a></li>
@@ -359,7 +359,7 @@ $res = mysqli_query($conn, $sql);
     
     <textarea name="comment" class="form-control" rows="5" placeholder='enter your comment...'></textarea>
 </div>
-<button type="submit" class="btn btn-primary">Submit</button>
+<button type="submit" class="btn">Submit</button>
 </form>
               
 <?php if (isset($smsg)) { ?><div class="alert alert-success" role="alert"> <?php echo $smsg; ?> </div><?php 

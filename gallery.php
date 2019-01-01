@@ -1,5 +1,5 @@
 <head>
-  <link rel="stylesheet" href="css/gallery.css">
+  <!-- <link rel="stylesheet" href="css/gallery.css"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
   <script src="js/gallery.js"></script>

@@ -140,36 +140,29 @@
 <script src="js/bootstrap.min.js"></script>
 <!-- Rev slider js -->
 <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
+
 <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
 <script src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
 <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
 <script src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
-<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-<script src="vendors/isotope/isotope.pkgd.min.js"></script>
-<script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-<script src="vendors/bootstrap-selector/js/bootstrap-select.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.3/js/bootstrap-select.min.js"></script>
 
-<!-- contact js -->
-<script src="js/jquery.form.js"></script>
-<script src="js/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+<!-- <script src="js/jquery.validate.min.js"></script> -->
 <script src="js/contact.js"></script>
 
 <script src="js/theme.js"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+ <script src="https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js"></script>
+ <script src='js/subscription.js'></script>
 
-<script>
-    jQuery('.statistic-counter').counterUp({
-        delay: 10,
-        time: 2000
-    });  
-</script>
 </body>
-
-<!-- Mirrored from demos.pixelatethemes.com/consultplus/theme/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jun 2018 09:13:33 GMT -->
 
 </html>

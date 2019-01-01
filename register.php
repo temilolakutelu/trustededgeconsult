@@ -20,9 +20,6 @@ if (isset($_POST["rname"]) || isset($_POST["remail"]) || isset($_POST["rtel"])) 
     $conn->multi_query($sql);
 }
 
-
-
-
 $trainingSql = "SELECT * FROM tb_training";
 $training = mysqli_query($conn, $trainingSql);
 

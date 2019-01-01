@@ -101,7 +101,7 @@ $tags = mysqli_query($conn, $tagsql);
             <!-- end navigation --> 
         </header>
     <!-- start page title section -->
-    <section class="wow fadeIn parallax" data-stellar-background-ratio="0.5" style="background-image:url('images/parallax-bg39.jpg');">
+    <section class="wow fadeIn parallax" data-stellar-background-ratio="0.5" style="background-image:url('images/blog.jpg');">
         <div class="opacity-medium bg-extra-dark-gray"></div>
         <div class="container">
             <div class="row">
@@ -131,13 +131,13 @@ $tags = mysqli_query($conn, $tagsql);
                     <div class="equalize sm-equalize-auto blog-post-content margin-60px-bottom padding-60px-bottom display-inline-block border-bottom border-color-extra-light-gray sm-margin-30px-bottom sm-padding-30px-bottom xs-text-center sm-no-border">
                         <div class="blog-image col-md-5 no-padding sm-margin-30px-bottom xs-margin-20px-bottom margin-45px-right sm-no-margin-right display-table">
                             <div class="display-table-cell vertical-align-middle">
-                                <a href="blog-standard-post.php"><img class='img-responsive img-fluid'  src="../XownCMS/images/blog/<?= $row['image']; ?>" alt=""></a>
+                                <a href='blog-standard-post.php?post=<?= $row['tag'] ?>&id=<?= $row['blogID'] ?>&tag=<?= $row['tagID'] ?>'><img class='img-responsive img-fluid'  src="../XownCMS/images/blog/<?= $row['image']; ?>" alt=""></a>
                             </div>
                         </div>
                         <div class="blog-text col-md-6 display-table no-padding">
                             <div class="display-table-cell vertical-align-middle">
                                 <div class="content margin-20px-bottom sm-no-padding-left ">
-                                    <a href="blog-standard-post.php" class="text-extra-dark-gray margin-5px-bottom alt-font text-extra-large font-weight-600 display-inline-block"> <?= $row['title'] ?></a>
+                                    <a href="href='blog-standard-post.php?post=<?= $row['tag'] ?>&id=<?= $row['blogID'] ?>&tag=<?= $row['tagID'] ?>'" class="text-extra-dark-gray margin-5px-bottom alt-font text-extra-large font-weight-600 display-inline-block"> <?= $row['title'] ?></a>
                                     <div class="text-medium-gray text-extra-small margin-15px-bottom text-uppercase alt-font"><span>By
                                             <span class="text-medium-gray"> <?= $row['author'] ?></span></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<span> <?= $row['date'] ?></span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="blog-grid.php"
                                             class="text-medium-gray"> <?= $row['tag'] ?></a></div>

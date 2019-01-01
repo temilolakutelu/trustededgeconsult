@@ -3527,7 +3527,10 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
    Blog
 ====================================== */
 
-.blog-image a > img {width: 100%}
+.blog-image a > img {
+    width: 500px;
+    height: 300px;
+}
 
 /* blog post style 1 */
 .blog-post.blog-post-style1 .blog-post-images {background: #232323}

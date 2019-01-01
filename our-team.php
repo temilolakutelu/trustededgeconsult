@@ -34,112 +34,6 @@
     <div class="container">
 
 
-
-        <!--div class="row">
-  <div class="col-sm-3"> <img src="img/solakinyele.jpg" alt="" width="280" height="280"> </div>
-  <div class="col-sm-7"> 
-        <h4>OLUSOLA AKINYELE (HR Executive)</h4>
-      <sub>(B.Sc., MBA, ACIPM)</sub>
-      
-      <div class="section_text">
-      <p>Over 15 years as a human resource practitioner with hands-on experience in organization planning/development. Setting-up human resource management. systems as well as practice in reputable and dynamic financial institutions in Nigeria.</p>   
-      <p>My competencies include change management, numeric, analytical and presentation skills amongst others.</p>  
-        
-          <ul class="f_social">
-                                   
-              <li><a href="#"><i class="fa fa-envelope-square"></i></a></li>                     
-              
-              <li><a href="https://facebook.com"><i class="fa fa-facebook-square"></i></a></li>
-                                   
-              <li><a href="https://twitter.com"><i class="fa fa-twitter-square"></i></a></li>
-                                    
-              <li><a href="https://linkedin.com"><i class="fa fa-linkedin-square"></i></a></li>
-                                
-          </ul>
-      </div>
-      
-        </div>  
-    </div-->
-
-        <!--div class="row">
-  <div class="col-sm-3"> <img src="img/photo-icon.jpg" alt="" width="280" height="280"> </div>
-  <div class="col-sm-7"> 
-        <h4>OSEH AIGBOGUN  (Consultant)</h4>
-      
-      <div class="section_text">
-      <p>He has acquired experience in the field of Human Resources and realized that the determining factor to success or failure of organizations is the execution of strategy. His goal is to help organizations break down strategy into measurable operational activities and install systems that enable excellent performance. </p>   
-      <p>His specialties include Performance Management System, Goals Alignment and Excellent communication.</p>  
-        
-          <ul class="f_social">
-                                   
-             <li><a href="#"><i class="fa fa-envelope-square"></i></a></li>                     
-              
-              <li><a href="https://facebook.com"><i class="fa fa-facebook-square"></i></a></li>
-                                   
-              <li><a href="https://twitter.com"><i class="fa fa-twitter-square"></i></a></li>
-                                    
-              <li><a href="https://linkedin.com"><i class="fa fa-linkedin-square"></i></a></li>
-          </ul>
-      </div>
-      
-        </div>  
-    </div-->
-        <!--div class="row">
-  <div class="col-sm-3"> <img src="img/photo-icon.jpg" alt="" width="280" height="280"> </div>
-  <div class="col-sm-7"> 
-        <h4>DR. KAZEEM KOLAWOLE DURODOYE (Chief Strategy Officer)</h4>
-      
-      <div class="section_text">
-      <p>Dr. Kazeem Durodoye, a graduate of Microbiology, has over 17 year’s hands-on experience in different management positions in Information and Communications Technology (IT). Dr. Durodoye was General Manager and later Deputy Managing Director at Chams Nigeria PLC.</p>   
-      <p>Prior to joining Chams, he was head, Corporate Planning & Development at May & Baker Nigeria PLC.</p>  
-        
-          <ul class="f_social">
-                                   
-              <li><a href="#"><i class="fa fa-envelope-square"></i></a></li>                     
-              
-              <li><a href="https://facebook.com"><i class="fa fa-facebook-square"></i></a></li>
-                                   
-              <li><a href="https:twitter.com"><i class="fa fa-twitter-square"></i></a></li>
-                                    
-              <li><a href="https://linkedin.com"><i class="fa fa-linkedin-square"></i></a></li>
-                                
-          </ul>
-      </div>
-      
-        </div>  
-    </div-->
-
-
-
-        <!--div class="row">
-  <div class="col-sm-3"> <img src="img/Peripaul.jpg" alt="" width="280" height="280"> </div>
-  <div class="col-sm-7"> 
-        <h4>OLUCHUKWU PERIPAUL ONUOHA (BUSINESS ANALYST)</h4>
-      <sub>AAT, B.Sc, M.Sc</sub>
-      
-      <div class="section_text">
-      <p>An analyst with over 3 years of experience in Socioeconomic research and analysis, Financial analysis, Project Management, Risk analysis, an Excel and PowerPoint savvy with dexterity in E-view, Stata, SPSS and Peachtree. His paper, "Dynamic analysis of bank lending channel for monetary policy transmission in Nigeria”, has received an unprecedented attention since its publication. He is also a business strategist with a track record of developing winning business plans, providing financial advisory services and market research.</p>
-          <p>He is a graduate of the University of Lagos and holds a Masters degree in Economics from the same school. He is also an Associate Accountant and a student member of the Institute of Chartered Accountants of Nigeria (ICAN). A full member of the Nigerian Economic Society (NES).</p>
-          <p>Peripaul has a drive for Excellence with the passion to contribute effectively to the attainment of the organizational goals while 
-              working tactically on assigned roles as he gets equipped with the requisite skills needed to advance his professional career and also exposed to activities and strategic business units within the organization.</p> 
-          <p>He Set up Financial model and Installed Peachtree Accounting software in ZIT Technology Limited to improve data accuracy and timely availability of information where he drove growth by over 60%. He was an ardent advocate for the Millennium Development Goals (MDGs) during his National Youth Service (NYSC) year.</p>
-          <p>In (2009), he initiated an annual motivational programme in MFM Teenage Church – “I Am Seated Above Failure” which since its initiation has had tremendous positive impacts on the teenagers. He Increased data access, processing and validity in StatiSense Consulting.</p>
-        
-          <ul class="f_social">
-              <li><a href="#"><i class="fa fa-envelope-square"></i></a></li>                     
-              
-              <li><a href="https://facebook.com"><i class="fa fa-facebook-square"></i></a></li>
-                                   
-              <li><a href="https://twitter.com"><i class="fa fa-twitter-square"></i></a></li>
-                                    
-              <li><a href="https://linkedin.com"><i class="fa fa-linkedin-square"></i></a></li>
-                                
-          </ul>
-      </div>
-      
-        </div>  
-    </div-->
-
         <br>
         <br>
         <br>
@@ -347,44 +241,63 @@
                     <p>Highlights of our skills sets.</p>
                 </div>
             </div>
-            <ul>
-                <div class="col-sm-4">
-                    <p>Corporate Training
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        70%</p>
-                    <br>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="70"
-                            aria-valuemin="0" aria-valuemax="100" style="width:70%"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-4">
+                        <div class="progress pink">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">70%</div>
+                        </div>
+                        <p>Corporate Training
+                          &nbsp;&nbsp;&nbsp;</p>
                     </div>
-                    <p>Corporate Recruitment
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        75%</p>
-                    <br>
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="75"
-                            aria-valuemin="0" aria-valuemax="100" style="width:75%"></div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="progress yellow">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">75%</div>
+                        </div>
+                        <p>Corporate Recruitment
+                           </p>
                     </div>
-                </div>
-                <ul>
-                    <div class="col-sm-4">
+                    <div class="col-md-2 col-sm-4">
+                        <div class="progress blue">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">90%</div>
+                        </div>
                         <p>Outsourcing
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90%</p>
-                        <br>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90"
-                                aria-valuemin="0" aria-valuemax="100" style="width:90%"></div>
+                          </p>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <div class="progress green">
+                            <span class="progress-left">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <span class="progress-right">
+                                <span class="progress-bar"></span>
+                            </span>
+                            <div class="progress-value">76%</div>
                         </div>
                         <p>International School Placement
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;76%</p>
-                        <br>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="76"
-                                aria-valuemin="0" aria-valuemax="100" style="width:76%"></div>
-                        </div>
+                        </p>
                     </div>
-                </ul>
-            </ul>
+                </div>
+            </div>
+          
         </div>
     </div>
 </div>

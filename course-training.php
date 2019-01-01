@@ -35,7 +35,7 @@
                     place you above competition. Our training and coaching methodologies strategies are up to date
                      and can be uniquely deployed according to identified gaps.</p>
                      <br>
-                <h5 style="color: rgb(148, 212, 43);">Uniqueness Of Our Training Offering</h5>
+                <h3 style="color: rgb(148, 212, 43);">Uniqueness Of Our Training Offering</h3>
                 <br>
                 <ol>
                     <li  style="color:#898989;">Our training programmes are highly interactive and case-study driven and they can be undertaken on an in-house basis.</li>

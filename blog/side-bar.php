@@ -85,10 +85,10 @@ $blogs = mysqli_query($conn, $blogsql);
                         </div>
                         </div>
                         <div>
-                        <div class="text-extra-dark-gray margin-25px-bottom alt-font text-uppercase font-weight-600 text-small aside-title"><span>Instagram</span></div>
+                        <!-- <div class="text-extra-dark-gray margin-25px-bottom alt-font text-uppercase font-weight-600 text-small aside-title"><span>Instagram</span></div>
                         <div class="instagram-follow-api">
                             <ul id="instaFeed-aside"></ul>
-                        </div>
+                        </div> -->
 
 </div>
                         </div>

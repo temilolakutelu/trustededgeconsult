@@ -30,6 +30,7 @@
             <div class="col-md-4">
                 <div class="hr_icon1">
                 <i class="fa fa-sticky-note-o" aria-hidden="true"></i><h5>Application and admission processing</h5>
+                <a href="mailto:trusted@trustedegeconsult.com">Learn More...</a>
                 </div>
             </div>
             

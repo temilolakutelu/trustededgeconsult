@@ -1,6 +1,3 @@
-<head>
-    <link rel="stylesheet" href="css/video.css">
-</head>
 
 <?php
 include 'XownCMS/conn.php';
@@ -31,39 +28,32 @@ $videos = mysqli_query($conn, $videoSql);
 <br>
 <br>
 <br>
-<section class="container videos">
-
-    <div class="container">
-   
-        <div class="row">
-            <div id="page-title" class="col-12 text-center mb-5">
-                <h1>Video Gallery</h1>
-            </div>
-            <br>
-            <ul>
-            <?php if (!empty($videos) && mysqli_num_rows($videos) > 0) {
-                $x = 1;
-                // output data of each row
-                while ($row = mysqli_fetch_assoc($videos)) { ?>
-                <li  class=" video-box col-lg-4 col-md-6 col-sm-6 col-xs-12">
-                <div class='video'>
-                <iframe src="<?= $row['url']; ?>" frameborder="0" allowfullscreen width="350" height="300"></iframe>
-                <p style='color: rgb(100, 182, 33);'><?= $row['title']; ?></p>
+<section class="videos container-fluid">
+        <div class="pb-video-container">
+                <div class="col-md-10 col-md-offset-1 row">
+            
+                    <div class="pb-row">
+                        <?php if (!empty($videos) && mysqli_num_rows($videos) > 0) {
+                                    $x = 1;
+                                    // output data of each row
+                                    while ($row = mysqli_fetch_assoc($videos)) { ?>
+                        <div class="col-md-3 pb-video mx-4">
+                            <iframe class="pb-video-frame" width="100%" height="230" src="<?= $row['url']; ?>" frameborder="0" allowfullscreen></iframe>
+                            <label class="form-control">
+                                <?= $row['title']; ?></label>
+                        </div>
+                        <?php 
+                                }
+                            } ?>
+            
+                    </div>
+            
+            
                 </div>
-                </li>
-                <?php 
-            }
-        } ?>
-            </ul>
-           
-        </div>
-           
-   
-    </div>
+            </div>
+            
 </section>
 <br>
 <br>
-
-<script src="js/video.js"></script>
 
 <?php include_once('footer.php'); ?>

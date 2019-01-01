@@ -1,8 +1,12 @@
-<?php
+<?php 
+//inserting contact form input into db
+if (isset($_POST["name"]) || isset($_POST["email"]) || isset($_POST["message"])) {
 
-include_once('header.php');
+    $sql = "INSERT INTO tb_feedback(name,email,message) VALUES ('" . $_POST["name"] . "','" . $_POST["email"] . "','" . $_POST["message"] . "');";
+    $conn->multi_query($sql);
+}?>
 
-?>
+<?php  include_once('header.php');?>
         
         <!--================Banner Area =================-->
         <section class="banner_area">
@@ -34,28 +38,28 @@ include_once('header.php');
                     <div class="row">
                         <div class="col-md-8">
                             <div class="row">
-                                <form class="contact_us_form" action="http://demos.pixelatethemes.com/consultplus/theme/contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                                <form class="contact_us_form" action="" method="post" id="contactForm" novalidate="novalidate">
                                     <div class="form-group col-md-12">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Name"required>
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <textarea class="form-control" name="message" id="message" rows="1" placeholder="Message"></textarea>
+                                        <textarea class="form-control" name="message" id="message" rows="1" placeholder="Message" required></textarea>
                                     </div>
                                     <div class="form-group col-md-12">
-                                        <button type="submit" value="submit" class="btn green_submit_btn form-control">submit now</button>
+                                        <button type="submit" name="submit" value="submit" class="btn green_submit_btn form-control">submit now</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="our_about_image">
-                                <img src="img/contact-us.jpg" alt="">
+                                <img src="img/contact-us.jpg" alt="" class="img-responsive img-fluid">
                             </div>
                         </div>
                     </div>
@@ -123,12 +127,7 @@ include_once('header.php');
         </section>
         <!--================End Get In Consultation Area =================-->
         
-       <?php
-
-include_once('footer.php');
-
-?>
-       
+    
         
         <!--================Contact Success and Error message Area =================-->
         <div id="success" class="modal modal-message fade" role="dialog">
@@ -159,39 +158,4 @@ include_once('footer.php');
         <!--================End Contact Success and Error message Area =================-->
         
         
-        
-        
-        
-        
-        
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="js/jquery-2.2.4.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-        <!-- Rev slider js -->
-        <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <!--gmaps Js-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-        <script src="js/gmaps.min.js"></script>
-        
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
-        <script src="vendors/bootstrap-selector/js/bootstrap-select.min.js"></script>
-        
-        <!-- contact js -->
-        <script src="js/jquery.form.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/contact.js"></script>
-        
-        <script src="js/theme.js"></script>
-    </body>
-
-<!-- Mirrored from demos.pixelatethemes.com/consultplus/theme/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jun 2018 09:14:33 GMT -->
-</html>
+        <?php include_once('footer.php');?>

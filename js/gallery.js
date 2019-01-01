@@ -1,4 +1,4 @@
-let modalId = $('#image-gallery');
+let modalId=$('#image-gallery');
 
 $(document)
     .ready(function () {

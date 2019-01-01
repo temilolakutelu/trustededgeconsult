@@ -1,6 +1,3 @@
-<head>
-  <link rel="stylesheet" href="css/galleryCat.css">
-</head>
 
 <?php
 include 'XownCMS/conn.php';
